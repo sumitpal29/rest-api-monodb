@@ -1,0 +1,27 @@
+GET http://localhost:3000/blogpost
+
+###
+
+GET http://localhost:3000/blogpost/5e65c696308227de51b7720c
+
+###
+POST http://localhost:3000/blogpost
+Content-Type: application/json
+
+{
+   "header":"5th post",
+   "body":"4444 aaa sss post body - This is body of the blog",
+   "auther":"Pritha"
+}
+
+###
+DELETE http://localhost:3000/blogpost/5e65c696308227de51b7720c
+
+###
+
+PATCH http://localhost:3000/blogpost/5e65c6a2308227de51b7720d
+Content-Type: application/json
+
+{
+   "auther":"Sumit pal"
+}
